@@ -43,7 +43,7 @@ function App() {
         <Button text={"O"} onSetPlayerHandler={onSetCircleHandler} />
       </div>
       <span className='mx-2 my-4 flex justify-center align-center font-bold text-2xl'>Turn: {player}</span>
-      <div className='inline-grid grid-cols-3 gap-4 align-center justify-center'>
+      <div className='grid grid-cols-3 gap-3 justify-items-center items-center justify-center content-center'>
         {
           board.map((value, index) => {
             return <GridLayout key={index} playerLogo={value} onClickHandler={() => handleCellClick(index)} />
